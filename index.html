@@ -11,30 +11,48 @@
             <h1>Contract Works</h1>
         </header>
         
-        <div id="contractApp">
-            <form id="addContract" action="#">
-                <span>
+        <section id="main">
+            <div id="costBasis">
+                <h3>Cost-Basis Wizard</h3>
+                <form id="calculateCost" action="#">
+                    <label for="rentCycle">Your rent cycle:</label>
+                    <select id="rentCycle">
+                        <option value="monthly">Monthly</option>
+                        <option value="weekly">Weekly</option>
+                    </select>
+                    <br>
+                    <label for="lessorRent">Your rent: $</label>
+                    <input id="lessorRent" type="number" />
+                    per month. <!--Make this dynamic, e.g. "month" should change depending on lessor's rent cycle.-->
+                </form>
+                <!--Calculations should appear instantly in small italicized text-->
+            </div>
+            <br>
+            <div id="subleaseSetup">
+                <h3>Sublease Basics</h3>
+                <form id="subleaseBasics" action="#">
                     <label for="propertyType">Property Type:</label>
                     <select id="propertyType">
                         <option value="apartment">Entire Apartment</option>
                         <option value="room">Single Bedroom</option>
                     </select>
                     <br>
-                    <label for="rent">Rent: $</label>
-                    <input id="rent" type="number" />
-                    per month
+                    <label for="leseeRent">Rent: $</label>
+                    <input id="leseeRent" type="number" />
+                    per month.
                     <br>
-                    <label for="moveIn">Move In</label>
-                    <input id="moveIn" type="date" />
+                    <label for="leseeMoveIn">Move In</label>
+                    <input id="leseeMoveIn" type="date" />
                     <br>
-                    <label for="moveOut">Move Out</label>
-                    <input id="moveOut" type="date" />
-                </span>
-            </form>
-        </div>
-
+                    <label for="leseeMoveOut">Move Out</label>
+                    <input id="leseeMoveOut" type="date" />
+                </form>
+            </div>
+        </section>
+        
         <footer id="footer">
-            <h3>Hexna Corp.</h3>
+            <br>
+            <p>Hexna Corp.</p>
             <p>http://www.hexna.com</p>
         </footer>
 
