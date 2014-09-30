@@ -1,33 +1,46 @@
 <!doctype html>
 <html lang="en">
-  
-  <head>
-    <meta charset="utf-8">
-    <title>Contract Works</title>
-    <link rel="stylesheet" href="assets/base.css">
-  </head>
-  
-  <body>
+    <head>
+        <meta charset="utf-8">
+        <title>Contract Works</title>
+        <link rel="stylesheet" href="css/base.css">
+    </head>
 
-    <header id="header">
-      <h1>Contract Works</h1>
-    </header>
+    <body>
+        <header id="header">
+            <h1>Contract Works</h1>
+        </header>
+        
+        <div id="contractApp">
+            <form id="addContract" action="#">
+                <span>
+                    <label for="propertyType">Property Type:</label>
+                    <select id="propertyType">
+                        <option value="apartment">Entire Apartment</option>
+                        <option value="room">Single Bedroom</option>
+                    </select>
+                    <br>
+                    <label for="rent">Rent: $</label>
+                    <input id="rent" type="number" />
+                    per month
+                    <br>
+                    <label for="moveIn">Move In</label>
+                    <input id="moveIn" type="date" />
+                    <br>
+                    <label for="moveOut">Move Out</label>
+                    <input id="moveOut" type="date" />
+                </span>
+            </form>
+        </div>
 
-    <div id="contractApp">
-      <form id="addContract" action="#">
-        <div>
-          <label for="propertyType">Property Type: </label>
-          <input id="propertyType" type="text" />
-    </div>
+        <footer id="footer">
+            <h3>Hexna Corp.</h3>
+            <p>http://www.hexna.com</p>
+        </footer>
 
-      <footer id="footer">
-        <h3>Hexna Corp.</h3>
-        http://www.hexna.com
-      </footer>
-
-    <script src="js/lib/jquery-2.1.1.js"></script>
-    <script src="js/lib/underscore.js"></script>
-    <script src="js/lib/backbone.js"></script>
-    <script src="js/lib/backbone.localStorage.js"></script>
-  </body>
+        <script src="js/lib/jquery-2.1.1.js"></script>
+        <script src="js/lib/underscore.js"></script>
+        <script src="js/lib/backbone.js"></script>
+        <script src="js/lib/backbone.localStorage.js"></script>
+    </body>
 </html>
