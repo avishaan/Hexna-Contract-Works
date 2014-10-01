@@ -18,15 +18,12 @@ $(document).ready(function() {
 		$(this).remove();
 		//Cost-Basis Wizard
 		var costBasisTitle = $("<h3>Cost-Basis Wizard</h3>");
+		$("section").append(costBasisTitle);
 		var lessorRentCycle = new Question({ 
-			question: "Your rent cycle: ",
-			questionType: "select",
-			option1: "Monthly",
-			option2: "Weekly",
-			input: '',
+			question: "Rent per month: ",
+			inputType: "number",
 		});
 		var questionView = new QuestionView({ model: lessorRentCycle});
 		questionView.render();
-		$("section").append(costBasisTitle);
 	});
 });
