@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	//Header
-	var header = $("<h1>Hexna Contract Works</h1>");
+	var header = $("<h1>Hexna Auto Sublease</h1>");
 	$("header").append(header);
 
 	//Footer
@@ -11,7 +11,12 @@ $(document).ready(function() {
 	})
 
 	//Initial
-	var initialDesc = $("<div id=\"initialDesc\"><p>Let Hexna give you peace of mind when you choose to sublease your property. Preparing a sublease is time-consuming and often difficult. If you don't use the proper legal language in drafting your arrangement, you're left with no recourse if something goes wrong. Using our software, you can easily create legally binding, airtight leases in a matter of minutes.</p></div>");
+	var initialDesc = $("<div id=\"initialDesc\"><p>Let Hexna give you " + 
+					"peace of mind when you choose to sublease your property. " + 
+					"Preparing a sublease is time-consuming and often difficult. " + 
+					"If you don't use the proper legal language in drafting your arrangement, " + 
+					"you're left with no recourse if something goes wrong. Using our software, " + 
+					"you can easily create legally binding, airtight leases in a matter of minutes.</p></div>");
 	$("section").append(initialDesc);
 	var nextButton = $("<button type=button>Let's begin</button>");
 	$("section").append(nextButton);
