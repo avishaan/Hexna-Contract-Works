@@ -8,9 +8,14 @@ $(document).ready(function() {
 	$("footer").append(footer);
 	$("footer").on("click", function(){
 		alert("Why would you click that?\n\nInteresting...");
-	})
+	});
 
-	//Initial
+	//Application
+	var sublessorName = new Question({questionText: 'Sublessor Name:'});
+	var sublessorNameView = new QuestionView({model: sublessorName});
+	sublessorNameView.render();
+
+	/*//Initial
 	var initialDesc = $("<div id=\"initialDesc\"><p>Let Hexna give you " + 
 					"peace of mind when you choose to sublease your property. " + 
 					"Preparing a sublease is time-consuming and often difficult. " + 
@@ -33,5 +38,5 @@ $(document).ready(function() {
 		});
 		var questionView = new QuestionView({ model: lessorRentCycle});
 		questionView.render();
-	});
+	});*/
 });

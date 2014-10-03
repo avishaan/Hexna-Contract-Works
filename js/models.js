@@ -12,8 +12,3 @@ var Question = Backbone.Model.extend({
 		input: ''
 	}
 });
-
-var name = new Question({
-	first: '',
-	last: ''
-});

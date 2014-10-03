@@ -1,12 +1,14 @@
 var QuestionView = Backbone.View.extend({
+	tagName: 'span',
+	id: 'question-view',
+	className: 'question',
 	el: $('section'),
-	
+	template: _.template('<%= questionText %>'),
 	initialize: function(){
 		_.bindAll(this, 'render');
 	},
-
 	render: function(){
-		var html = this.model.get('question');
-		$(this.el).append(html);
+		var attributes = this.model.toJSON();
+		this.$el.html(this.template(attributes));
 	}
 });
